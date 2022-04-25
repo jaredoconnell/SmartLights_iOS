@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A7F0BA6275C035E00745946 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0BA5275C035E00745946 /* Tests_iOS.swift */; };
+		1A7F0BA8275C035E00745946 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0BA7275C035E00745946 /* Tests_iOSLaunchTests.swift */; };
+		1A7F0BB2275C035E00745946 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0BB1275C035E00745946 /* Tests_macOS.swift */; };
+		1A7F0BB4275C035E00745946 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0BB3275C035E00745946 /* Tests_macOSLaunchTests.swift */; };
+		1A7F0BB5275C035E00745946 /* SmartLightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8D275C035D00745946 /* SmartLightsApp.swift */; };
+		1A7F0BB6275C035E00745946 /* SmartLightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8D275C035D00745946 /* SmartLightsApp.swift */; };
+		1A7F0BB7275C035E00745946 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8E275C035D00745946 /* ContentView.swift */; };
+		1A7F0BB8275C035E00745946 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8E275C035D00745946 /* ContentView.swift */; };
+		1A7F0BB9275C035E00745946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8F275C035E00745946 /* Assets.xcassets */; };
+		1A7F0BBA275C035E00745946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7F0B8F275C035E00745946 /* Assets.xcassets */; };
+		1AD15F962815E02400439C5C /* BLEListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD15F952815E02400439C5C /* BLEListView.swift */; };
+		1AD15F972815E02400439C5C /* BLEListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD15F952815E02400439C5C /* BLEListView.swift */; };
+		1AD15F992815EC1600439C5C /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD15F982815EC1600439C5C /* BLEManager.swift */; };
+		1AD15F9A2815EC1600439C5C /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD15F982815EC1600439C5C /* BLEManager.swift */; };
+		1AD15F9D2815F9F400439C5C /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD15F9C2815F9F400439C5C /* OrderedCollections */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A7F0BA2275C035E00745946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A7F0B88275C035D00745946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7F0B93275C035E00745946;
+			remoteInfo = "SmartLights (iOS)";
+		};
+		1A7F0BAE275C035E00745946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A7F0B88275C035D00745946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7F0B99275C035E00745946;
+			remoteInfo = "SmartLights (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A7F0B8D275C035D00745946 /* SmartLightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLightsApp.swift; sourceTree = "<group>"; };
+		1A7F0B8E275C035D00745946 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A7F0B8F275C035E00745946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A7F0B94275C035E00745946 /* SmartLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7F0B9A275C035E00745946 /* SmartLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7F0B9C275C035E00745946 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1A7F0BA1275C035E00745946 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7F0BA5275C035E00745946 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		1A7F0BA7275C035E00745946 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		1A7F0BAD275C035E00745946 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7F0BB1275C035E00745946 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		1A7F0BB3275C035E00745946 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		1AD15F952815E02400439C5C /* BLEListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEListView.swift; sourceTree = "<group>"; };
+		1AD15F982815EC1600439C5C /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A7F0B91275C035E00745946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD15F9D2815F9F400439C5C /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B97275C035E00745946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B9E275C035E00745946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0BAA275C035E00745946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A7F0B87275C035D00745946 = {
+			isa = PBXGroup;
+			children = (
+				1A7F0B8C275C035D00745946 /* Shared */,
+				1A7F0B9B275C035E00745946 /* macOS */,
+				1A7F0BA4275C035E00745946 /* Tests iOS */,
+				1A7F0BB0275C035E00745946 /* Tests macOS */,
+				1A7F0B95275C035E00745946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A7F0B8C275C035D00745946 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1A7F0B8D275C035D00745946 /* SmartLightsApp.swift */,
+				1A7F0B8E275C035D00745946 /* ContentView.swift */,
+				1A7F0B8F275C035E00745946 /* Assets.xcassets */,
+				1AD15F952815E02400439C5C /* BLEListView.swift */,
+				1AD15F982815EC1600439C5C /* BLEManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1A7F0B95275C035E00745946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A7F0B94275C035E00745946 /* SmartLights.app */,
+				1A7F0B9A275C035E00745946 /* SmartLights.app */,
+				1A7F0BA1275C035E00745946 /* Tests iOS.xctest */,
+				1A7F0BAD275C035E00745946 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A7F0B9B275C035E00745946 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A7F0B9C275C035E00745946 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1A7F0BA4275C035E00745946 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A7F0BA5275C035E00745946 /* Tests_iOS.swift */,
+				1A7F0BA7275C035E00745946 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		1A7F0BB0275C035E00745946 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A7F0BB1275C035E00745946 /* Tests_macOS.swift */,
+				1A7F0BB3275C035E00745946 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A7F0B93275C035E00745946 /* SmartLights (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7F0BBD275C035E00745946 /* Build configuration list for PBXNativeTarget "SmartLights (iOS)" */;
+			buildPhases = (
+				1A7F0B90275C035E00745946 /* Sources */,
+				1A7F0B91275C035E00745946 /* Frameworks */,
+				1A7F0B92275C035E00745946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartLights (iOS)";
+			packageProductDependencies = (
+				1AD15F9C2815F9F400439C5C /* OrderedCollections */,
+			);
+			productName = "SmartLights (iOS)";
+			productReference = 1A7F0B94275C035E00745946 /* SmartLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A7F0B99275C035E00745946 /* SmartLights (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7F0BC0275C035E00745946 /* Build configuration list for PBXNativeTarget "SmartLights (macOS)" */;
+			buildPhases = (
+				1A7F0B96275C035E00745946 /* Sources */,
+				1A7F0B97275C035E00745946 /* Frameworks */,
+				1A7F0B98275C035E00745946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartLights (macOS)";
+			productName = "SmartLights (macOS)";
+			productReference = 1A7F0B9A275C035E00745946 /* SmartLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A7F0BA0275C035E00745946 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7F0BC3275C035E00745946 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				1A7F0B9D275C035E00745946 /* Sources */,
+				1A7F0B9E275C035E00745946 /* Frameworks */,
+				1A7F0B9F275C035E00745946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A7F0BA3275C035E00745946 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 1A7F0BA1275C035E00745946 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1A7F0BAC275C035E00745946 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7F0BC6275C035E00745946 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				1A7F0BA9275C035E00745946 /* Sources */,
+				1A7F0BAA275C035E00745946 /* Frameworks */,
+				1A7F0BAB275C035E00745946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A7F0BAF275C035E00745946 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 1A7F0BAD275C035E00745946 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A7F0B88275C035D00745946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1A7F0B93275C035E00745946 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1A7F0B99275C035E00745946 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1A7F0BA0275C035E00745946 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1A7F0B93275C035E00745946;
+					};
+					1A7F0BAC275C035E00745946 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1A7F0B99275C035E00745946;
+					};
+				};
+			};
+			buildConfigurationList = 1A7F0B8B275C035D00745946 /* Build configuration list for PBXProject "SmartLights" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A7F0B87275C035D00745946;
+			packageReferences = (
+				1AD15F9B2815F9F400439C5C /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 1A7F0B95275C035E00745946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A7F0B93275C035E00745946 /* SmartLights (iOS) */,
+				1A7F0B99275C035E00745946 /* SmartLights (macOS) */,
+				1A7F0BA0275C035E00745946 /* Tests iOS */,
+				1A7F0BAC275C035E00745946 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A7F0B92275C035E00745946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7F0BB9275C035E00745946 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B98275C035E00745946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7F0BBA275C035E00745946 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B9F275C035E00745946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0BAB275C035E00745946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A7F0B90275C035E00745946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD15F962815E02400439C5C /* BLEListView.swift in Sources */,
+				1AD15F992815EC1600439C5C /* BLEManager.swift in Sources */,
+				1A7F0BB7275C035E00745946 /* ContentView.swift in Sources */,
+				1A7F0BB5275C035E00745946 /* SmartLightsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B96275C035E00745946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD15F972815E02400439C5C /* BLEListView.swift in Sources */,
+				1AD15F9A2815EC1600439C5C /* BLEManager.swift in Sources */,
+				1A7F0BB8275C035E00745946 /* ContentView.swift in Sources */,
+				1A7F0BB6275C035E00745946 /* SmartLightsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0B9D275C035E00745946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7F0BA8275C035E00745946 /* Tests_iOSLaunchTests.swift in Sources */,
+				1A7F0BA6275C035E00745946 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7F0BA9275C035E00745946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7F0BB4275C035E00745946 /* Tests_macOSLaunchTests.swift in Sources */,
+				1A7F0BB2275C035E00745946 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A7F0BA3275C035E00745946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A7F0B93275C035E00745946 /* SmartLights (iOS) */;
+			targetProxy = 1A7F0BA2275C035E00745946 /* PBXContainerItemProxy */;
+		};
+		1A7F0BAF275C035E00745946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A7F0B99275C035E00745946 /* SmartLights (macOS) */;
+			targetProxy = 1A7F0BAE275C035E00745946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A7F0BBB275C035E00745946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A7F0BBC275C035E00745946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1A7F0BBE275C035E00745946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88MM2M68U3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app needs bluetooth to control the LED Strips";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs bluetooth to control the LED Strips";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shadowxcraft.SmartLights;
+				PRODUCT_NAME = SmartLights;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A7F0BBF275C035E00745946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88MM2M68U3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app needs bluetooth to control the LED Strips";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs bluetooth to control the LED Strips";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shadowxcraft.SmartLights;
+				PRODUCT_NAME = SmartLights;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A7F0BC1275C035E00745946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shadowxcraft.SmartLights;
+				PRODUCT_NAME = SmartLights;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A7F0BC2275C035E00745946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shadowxcraft.SmartLights;
+				PRODUCT_NAME = SmartLights;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A7F0BC4275C035E00745946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.shadowxcraft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SmartLights (iOS)";
+			};
+			name = Debug;
+		};
+		1A7F0BC5275C035E00745946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.shadowxcraft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SmartLights (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A7F0BC7275C035E00745946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.shadowxcraft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SmartLights (macOS)";
+			};
+			name = Debug;
+		};
+		1A7F0BC8275C035E00745946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.shadowxcraft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SmartLights (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A7F0B8B275C035D00745946 /* Build configuration list for PBXProject "SmartLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7F0BBB275C035E00745946 /* Debug */,
+				1A7F0BBC275C035E00745946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7F0BBD275C035E00745946 /* Build configuration list for PBXNativeTarget "SmartLights (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7F0BBE275C035E00745946 /* Debug */,
+				1A7F0BBF275C035E00745946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7F0BC0275C035E00745946 /* Build configuration list for PBXNativeTarget "SmartLights (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7F0BC1275C035E00745946 /* Debug */,
+				1A7F0BC2275C035E00745946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7F0BC3275C035E00745946 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7F0BC4275C035E00745946 /* Debug */,
+				1A7F0BC5275C035E00745946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7F0BC6275C035E00745946 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7F0BC7275C035E00745946 /* Debug */,
+				1A7F0BC8275C035E00745946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AD15F9B2815F9F400439C5C /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AD15F9C2815F9F400439C5C /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AD15F9B2815F9F400439C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1A7F0B88275C035D00745946 /* Project object */;
+}
